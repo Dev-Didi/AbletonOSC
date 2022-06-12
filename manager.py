@@ -9,7 +9,7 @@ import os
 
 # TODO: This might need fixing to work on Windows
 logger = logging.getLogger("abletonosc")
-tmp_dir = "/tmp"
+tmp_dir = "/temp"
 log_path = os.path.join(tmp_dir, "abletonosc.log")
 file_handler = logging.FileHandler(log_path)
 file_handler.setLevel(logging.INFO)

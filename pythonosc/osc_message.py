@@ -26,6 +26,7 @@ class OscMessage(object):
         try:
             self._address_regexp, index = osc_types.get_string(self._dgram, 0)
             if not self._dgram[index:]:
+                print("no real params sent in OscMessage!")
                 # No params is legit, just return now.
                 return
 

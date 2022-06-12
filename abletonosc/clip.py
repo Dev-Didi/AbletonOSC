@@ -1,6 +1,6 @@
 from typing import Tuple, Any
 from .handler import AbletonOSCHandler
-import Live
+import live
 
 class ClipHandler(AbletonOSCHandler):
     def init_api(self):
@@ -49,7 +49,7 @@ class ClipHandler(AbletonOSCHandler):
 
         def clip_add_new_note(clip, params: Tuple[Any] = ()):
             pitch, start_time, duration, velocity, mute = params
-            note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+            note = live.Clip.MidiNoteSpecification(start_time=start_time,
                                                    duration=duration,
                                                    pitch=pitch,
                                                    velocity=velocity,
