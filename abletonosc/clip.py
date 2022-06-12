@@ -1,6 +1,6 @@
 from typing import Tuple, Any
 from .handler import AbletonOSCHandler
-import live
+import Live
 
 class ClipHandler(AbletonOSCHandler):
     def init_api(self):
